@@ -48,11 +48,6 @@ function get10($n){
     $value = $n;
     $res = 0;
     $num = 0;
-    $len = 0;
-    while($value > 1){
-        $value = $value /2; 
-        $len++;
-    }
     $value = $n;
     $counter = 0;
     while($value > 1){      
@@ -61,7 +56,7 @@ function get10($n){
         $res = $res + $num * pow(10, $counter) ;
         $counter++; 
     }
-    $res = $res + 1 * pow(10, $len-1);
+    $res = $res + 1 * pow(10, $counter);
     return $res;
 }
 
